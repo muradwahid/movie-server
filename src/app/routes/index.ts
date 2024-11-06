@@ -3,6 +3,7 @@ import { MovieRoutes } from '../modules/movie/movie.route';
 import { CategoryRoutes } from '../modules/category/category.route';
 import { SubCategoryRoutes } from '../modules/subCategory/subCategory.route';
 import { LinkRoutes } from '../modules/link/link.route';
+import { RegionRoutes } from '../modules/region/region.route';
 
 const router = express.Router();
 
@@ -23,6 +24,10 @@ const moduleRoutes = [
   {
     path: "/links",
     routes:LinkRoutes
+  },
+  {
+    path: "/regions",
+    routes:RegionRoutes
   }
 ];
 
