@@ -1,0 +1,19 @@
+Sun Oct 08 2023 19:28:15 } [PH] error: 🐱‍🏍 globalErrorHandler ~~ 
+Invalid `prisma.academicSemester.create()` invocation in
+C:\Users\Murad-Wahid\Desktop\PH-lvl-2\Mission-6 Be A SQL Superstar\university-management-core-service-starter\src\app\modules\academicSemester\academicSemester.service.ts:5:48
+
+  2 
+  3 const prisma = new PrismaClient();
+  4 const insertIntoDb = async (data: AcademicSemester):Promise<AcademicSemester> => {
+→ 5   const result = await prisma.academicSemester.create({
+        data: {
+          title: "Autumn",
+          year: "2029",
+                ~~~~~~
+          code: "01",
+          startMonth: "January",
+          endMonth: "May"
+        }
+      })
+
+Argument `year`: Invalid value provided. Expected Int, provided String.

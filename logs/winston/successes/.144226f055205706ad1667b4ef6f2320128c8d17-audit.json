@@ -1,0 +1,30 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "D:\\my projects\\personal\\back-end\\logs\\winston\\successes\\.144226f055205706ad1667b4ef6f2320128c8d17-audit.json",
+    "files": [
+        {
+            "date": 1729603430605,
+            "name": "D:\\my projects\\personal\\back-end\\logs\\winston\\successes\\phu-2024-22-10-19-success.log",
+            "hash": "60a4b76f49d6d16f1419ec8f5c875f0a4700f3b741faceaa417553b13b21aea7"
+        },
+        {
+            "date": 1729605786073,
+            "name": "D:\\my projects\\personal\\back-end\\logs\\winston\\successes\\phu-2024-22-10-20-success.log",
+            "hash": "a31204d8d874e5e9cb407efde8c2a08f7b9a4d60b7c2fc5955301e4b2fd8bcb2"
+        },
+        {
+            "date": 1730810178331,
+            "name": "D:\\my projects\\personal\\back-end\\logs\\winston\\successes\\phu-2024-05-11-18-success.log",
+            "hash": "f9f97694aaf3055fa723f6effb6db97922289be718a75899bbc4ae09ad582622"
+        },
+        {
+            "date": 1730811601590,
+            "name": "D:\\my projects\\personal\\back-end\\logs\\winston\\successes\\phu-2024-05-11-19-success.log",
+            "hash": "da7915cfab4561e89973806a69fde0b020edccfd7aa73139bd05996287de36a2"
+        }
+    ],
+    "hashType": "sha256"
+}

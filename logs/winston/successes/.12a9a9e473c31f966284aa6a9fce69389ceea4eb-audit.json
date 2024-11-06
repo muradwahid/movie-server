@@ -1,0 +1,25 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\Users\\Murad-Wahid\\Desktop\\PH-lvl-2\\Mission-6 Be A SQL Superstar\\university-management-core-service-starter\\logs\\winston\\successes\\.12a9a9e473c31f966284aa6a9fce69389ceea4eb-audit.json",
+    "files": [
+        {
+            "date": 1696771625587,
+            "name": "C:\\Users\\Murad-Wahid\\Desktop\\PH-lvl-2\\Mission-6 Be A SQL Superstar\\university-management-core-service-starter\\logs\\winston\\successes\\phu-2023-08-10-19-success.log",
+            "hash": "3a6d1d44823b88c5d1d399fc27f1b55e7963a831f30a8cafaf56ef0d7c395777"
+        },
+        {
+            "date": 1696832703748,
+            "name": "C:\\Users\\Murad-Wahid\\Desktop\\PH-lvl-2\\Mission-6 Be A SQL Superstar\\university-management-core-service-starter\\logs\\winston\\successes\\phu-2023-09-10-12-success.log",
+            "hash": "56d19213b8f4e386c983b0c51854d9e0795ccbd3adfd51a4b1822d53530e87aa"
+        },
+        {
+            "date": 1696834807012,
+            "name": "C:\\Users\\Murad-Wahid\\Desktop\\PH-lvl-2\\Mission-6 Be A SQL Superstar\\university-management-core-service-starter\\logs\\winston\\successes\\phu-2023-09-10-13-success.log",
+            "hash": "bd15042e409d3f66d9cefa59df44efe4abf90500410f01ecfabb638903966489"
+        }
+    ],
+    "hashType": "sha256"
+}

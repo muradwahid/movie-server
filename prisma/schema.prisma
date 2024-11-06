@@ -1,0 +1,132 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Movies {
+  id           String     @id @default(uuid())
+  title        String
+  thumbnail    String
+  bgImage      String
+  description  String
+  screenshots  String[]
+  categoriesId String?
+  categories   Category?  @relation(fields: [categoriesId], references: [id])
+  linkId       String?
+  link         Link?      @relation(fields: [linkId], references: [id])
+  regionId     String?
+  region       Region?    @relation(fields: [regionId], references: [id])
+  release_date DateTime?
+  imdb         String?
+  createdAt    DateTime   @default(now())
+  updatedAt    DateTime   @updatedAt
+  Tranding     Tranding[]
+  Featured     Featured[]
+
+  @@map("movies")
+}
+
+model Category {
+  id               String      @id @default(uuid())
+  title            String
+  sub_categories   SubCategory @relation(fields: [sub_categoriesId], references: [id])
+  sub_categoriesId String
+  createdAt        DateTime    @default(now())
+  updatedAt        DateTime    @updatedAt
+  movies           Movies[]
+
+  @@map("categories")
+}
+
+model SubCategory {
+  id        String     @id @default(uuid())
+  title     String
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+  Category  Category[]
+}
+
+model Link {
+  id         String   @id @default(uuid())
+  title      String
+  // serverNamesId String[]
+  serverName String[] @default([])
+  quality    String[]
+  fileLink   String
+  language   String
+  size       String
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+  Movies     Movies[]
+  // ServerName    ServerName[]
+
+  @@map("links")
+}
+
+// model ServerName {
+//   id           String     @id @default(uuid())
+//   name      String
+//   link      Link?    @relation(fields: [id], references: [id])
+//   createdAt DateTime @default(now())
+//   updatedAt DateTime @updatedAt
+//   @@map("server_names")
+// }
+
+model Region {
+  id        String   @id @default(uuid())
+  name      String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  Movies    Movies[]
+
+  @@map("regions")
+}
+
+model Tranding {
+  id       String  @id @default(uuid())
+  movies   Movies? @relation(fields: [moviesId], references: [id])
+  moviesId String?
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("trandings")
+}
+
+model Featured {
+  id        String   @id @default(uuid())
+  movies    Movies?  @relation(fields: [moviesId], references: [id])
+  moviesId  String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model User {
+  id           String   @id @default(uuid())
+  userId       String?
+  role         UserRole @default(USER)
+  firstName    String
+  lastName     String
+  email        String
+  password     String
+  profileImage String
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  @@map("users")
+}
+
+enum UserRole {
+  SUPER_ADMIN
+  ADMIN
+  AUTHOR
+  EDITOR
+  USER
+}

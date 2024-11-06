@@ -1,0 +1,30 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "D:\\my projects\\personal\\back-end\\logs\\winston\\errors\\.f08fe44e7e82b9cf960f8ccf32155cdf2f0c8f10-audit.json",
+    "files": [
+        {
+            "date": 1729603430610,
+            "name": "D:\\my projects\\personal\\back-end\\logs\\winston\\errors\\phu-2024-22-10-19-error.log",
+            "hash": "6a77c221195148109b2ba509599559ecd14945a26d63ea60631508335b6f3499"
+        },
+        {
+            "date": 1729605786080,
+            "name": "D:\\my projects\\personal\\back-end\\logs\\winston\\errors\\phu-2024-22-10-20-error.log",
+            "hash": "d79d73d74285c6bcec8804b11df2379b7b4330be63a81ee39e819667bc2b2963"
+        },
+        {
+            "date": 1730810178337,
+            "name": "D:\\my projects\\personal\\back-end\\logs\\winston\\errors\\phu-2024-05-11-18-error.log",
+            "hash": "3bd65e26e035da00bf59e56696f7e4c89fc8ff11913e9165ea75d20a6c9ecf1b"
+        },
+        {
+            "date": 1730811601597,
+            "name": "D:\\my projects\\personal\\back-end\\logs\\winston\\errors\\phu-2024-05-11-19-error.log",
+            "hash": "753ef1da6cc7b621d9bd1cb2c7d85103ca034e16e4d7335766f2f7a04040c09b"
+        }
+    ],
+    "hashType": "sha256"
+}
