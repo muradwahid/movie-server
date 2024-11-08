@@ -15,7 +15,7 @@ const getAllFromDB = catchAsync(async (req: Request, res: Response) => {
 })
 const getDataById = catchAsync(async (req: Request, res: Response) => {
   const id = req.params.id;
-  const result = await UserService.getDataById(id);
+  const result = await UserService.getDataById(Number(id));
   sendResponse(res, {
     statusCode: httpStatus.OK,
     success: true,

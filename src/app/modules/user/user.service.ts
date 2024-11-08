@@ -6,8 +6,8 @@ const getAllFromDB = async ():Promise<User[] | null> => {
   return result;
 };
 
-const getDataById = async (id:string):Promise<User | null> => {
-  const result = await prisma.user.findUnique({ where: { id } });
+const getDataById = async (id:number):Promise<User | null> => {
+  const result = await prisma.user.findUnique({ where: { userId:id } });
   return result;
 };
 

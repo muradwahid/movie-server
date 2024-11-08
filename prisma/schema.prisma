@@ -27,8 +27,8 @@ model Movies {
   imdb         String?
   createdAt    DateTime   @default(now())
   updatedAt    DateTime   @updatedAt
-  Tranding     Tranding[]
-  Featured     Featured[]
+  trending     Trending[]
+  teatured     Featured[]
 
   @@map("movies")
 }
@@ -50,21 +50,21 @@ model SubCategory {
   title     String
   createdAt DateTime   @default(now())
   updatedAt DateTime   @updatedAt
-  Category  Category[]
+  category  Category[]
 }
 
 model Link {
   id         String   @id @default(uuid())
   title      String
   // serverNamesId String[]
-  serverName String[] @default([])
-  quality    String[]
+  serverName String?
+  quality    String?
   fileLink   String
   language   String
   size       String
   createdAt  DateTime @default(now())
   updatedAt  DateTime @updatedAt
-  Movies     Movies[]
+  movies     Movies[]
   // ServerName    ServerName[]
 
   @@map("links")
@@ -84,12 +84,12 @@ model Region {
   name      String
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
-  Movies    Movies[]
+  movies    Movies[]
 
   @@map("regions")
 }
 
-model Tranding {
+model Trending {
   id       String  @id @default(uuid())
   movies   Movies? @relation(fields: [moviesId], references: [id])
   moviesId String?
@@ -97,7 +97,7 @@ model Tranding {
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
-  @@map("trandings")
+  @@map("trendings")
 }
 
 model Featured {
@@ -110,11 +110,11 @@ model Featured {
 
 model User {
   id           String   @id @default(uuid())
-  userId       String?
+  userId       Int @unique @default(autoincrement())
   role         UserRole @default(USER)
   firstName    String
   lastName     String
-  email        String
+  email        String @unique
   password     String
   profileImage String
   createdAt    DateTime @default(now())
