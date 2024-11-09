@@ -14,6 +14,12 @@ app.use(
     credentials: true,
   }),
 );
+// app.use(
+//   cors({
+//     origin: "https:www.demo.com",
+//     credentials: true,
+//   }),
+// );
 app.use(cookieParser() as express.RequestHandler);
 
 //parser
