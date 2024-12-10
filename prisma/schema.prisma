@@ -3,7 +3,9 @@
 
 generator client {
   provider = "prisma-client-js"
+  binaryTargets = ["native", "debian-openssl-3.0.x"]
 }
+
 
 datasource db {
   provider = "postgresql"
@@ -28,7 +30,7 @@ model Movies {
   createdAt    DateTime   @default(now())
   updatedAt    DateTime   @updatedAt
   trending     Trending[]
-  teatured     Featured[]
+  featured     Featured[]
 
   @@map("movies")
 }
@@ -51,6 +53,7 @@ model SubCategory {
   createdAt DateTime   @default(now())
   updatedAt DateTime   @updatedAt
   category  Category[]
+  @@map("subCategories")
 }
 
 model Link {
@@ -106,6 +109,7 @@ model Featured {
   moviesId  String?
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
+  @@map("features")
 }
 
 model User {
@@ -116,7 +120,7 @@ model User {
   lastName     String
   email        String @unique
   password     String
-  profileImage String
+  profileImage String?
   createdAt    DateTime @default(now())
   updatedAt    DateTime @updatedAt
 

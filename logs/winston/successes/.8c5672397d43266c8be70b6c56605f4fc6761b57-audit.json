@@ -1,0 +1,35 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/media/murad-wahid/SSD/my projects/personal/back-end/logs/winston/successes/.8c5672397d43266c8be70b6c56605f4fc6761b57-audit.json",
+    "files": [
+        {
+            "date": 1732977051451,
+            "name": "/media/murad-wahid/SSD/my projects/personal/back-end/logs/winston/successes/phu-2024-30-11-20-success.log",
+            "hash": "e4a6a803b04ba92be81961dbdc8b732ea8c12ae68c2c55e119f5d66f609ab556"
+        },
+        {
+            "date": 1733142993150,
+            "name": "/media/murad-wahid/SSD/my projects/personal/back-end/logs/winston/successes/phu-2024-02-12-18-success.log",
+            "hash": "08bb56be201d04e15a803c31e1a14b0808dd5052e8b00511e6afcc500ccda960"
+        },
+        {
+            "date": 1733579824647,
+            "name": "/media/murad-wahid/SSD/my projects/personal/back-end/logs/winston/successes/phu-2024-07-12-19-success.log",
+            "hash": "e30bef729872e2920908eb5657eadc811f573d577ae25e27d0bfa3dcc74cd82d"
+        },
+        {
+            "date": 1733838528185,
+            "name": "/media/murad-wahid/SSD/my projects/personal/back-end/logs/winston/successes/phu-2024-10-12-19-success.log",
+            "hash": "9c2e9d5ec68a381dd8b6c162ac135f7212f8673c1846b5b5fcd4d70954034b6a"
+        },
+        {
+            "date": 1733839251899,
+            "name": "/media/murad-wahid/SSD/my projects/personal/back-end/logs/winston/successes/phu-2024-10-12-20-success.log",
+            "hash": "b243c4794448570d12f944280af80692ce447676b5b716c26ffe9b12b5549d06"
+        }
+    ],
+    "hashType": "sha256"
+}

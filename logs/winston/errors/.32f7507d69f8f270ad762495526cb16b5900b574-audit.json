@@ -1,0 +1,35 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/media/murad-wahid/SSD/my projects/personal/back-end/logs/winston/errors/.32f7507d69f8f270ad762495526cb16b5900b574-audit.json",
+    "files": [
+        {
+            "date": 1732977051453,
+            "name": "/media/murad-wahid/SSD/my projects/personal/back-end/logs/winston/errors/phu-2024-30-11-20-error.log",
+            "hash": "228b3ea61827dac4825161a953d64af679a1ecd46dd15fa908a6706f0375bd94"
+        },
+        {
+            "date": 1733142993153,
+            "name": "/media/murad-wahid/SSD/my projects/personal/back-end/logs/winston/errors/phu-2024-02-12-18-error.log",
+            "hash": "bbc3d520ec8270067b5a9fd225fea60e0faee9dc870f9c6b7c7e6170cf83dd89"
+        },
+        {
+            "date": 1733579824649,
+            "name": "/media/murad-wahid/SSD/my projects/personal/back-end/logs/winston/errors/phu-2024-07-12-19-error.log",
+            "hash": "8d27556534908eb9bf9bcbd6f910e5a2106995604c32f85ff1f613d27d509b0f"
+        },
+        {
+            "date": 1733838528186,
+            "name": "/media/murad-wahid/SSD/my projects/personal/back-end/logs/winston/errors/phu-2024-10-12-19-error.log",
+            "hash": "abdc0753d9ed193b7eb8416b0debafa042907bc418369fec9fe63edc6e9f48a5"
+        },
+        {
+            "date": 1733839251900,
+            "name": "/media/murad-wahid/SSD/my projects/personal/back-end/logs/winston/errors/phu-2024-10-12-20-error.log",
+            "hash": "0236603c3d2ef1c564a2e1e978d5ceb64dc590558c41429bd45822bd7553cb47"
+        }
+    ],
+    "hashType": "sha256"
+}

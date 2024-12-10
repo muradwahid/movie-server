@@ -6,10 +6,16 @@ import { LinkRoutes } from '../modules/link/link.route';
 import { RegionRoutes } from '../modules/region/region.route';
 import { UserRoutes } from '../modules/user/user.route';
 import { FeaturedRoutes } from '../modules/featured/featured.route';
+import { AuthRoutes } from '../modules/auth/auth.route';
 
 const router = express.Router();
 
-const moduleRoutes = [
+type ModuleRoute = {
+  path: string;
+  routes: express.Router;
+}
+
+const moduleRoutes:ModuleRoute[] = [
   // ... routes
   {
     path: "/movies",
@@ -38,6 +44,10 @@ const moduleRoutes = [
   {
     path: "/features",
     routes:FeaturedRoutes
+  },
+  {
+    path: "/auth",
+    routes:AuthRoutes
   }
 ];
 

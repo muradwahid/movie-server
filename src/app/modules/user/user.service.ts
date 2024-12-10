@@ -6,11 +6,16 @@ const getAllFromDB = async ():Promise<User[] | null> => {
   return result;
 };
 
-const getDataById = async (id:number):Promise<User | null> => {
-  const result = await prisma.user.findUnique({ where: { userId:id } });
+const getDataById = async (id: any): Promise<User | null> => {
+  const result = await prisma.user.findFirst({
+    where: { 
+      OR: [
+        { userId: id },
+        {email: id},
+    ]
+  } });
   return result;
 };
-
 const insertIntoDB = async (data: User):Promise<User | null> => {
   const result = await prisma.user.create({ data });
   return result;

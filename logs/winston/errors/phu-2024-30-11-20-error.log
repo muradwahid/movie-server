@@ -1,0 +1,32 @@
+Sat Nov 30 2024 20:30:51 } [PH] error: Prisma Client could not locate the Query Engine for runtime "debian-openssl-3.0.x".
+
+This happened because Prisma Client was generated for "windows", but the actual deployment required "debian-openssl-3.0.x".
+Add "debian-openssl-3.0.x" to `binaryTargets` in the "schema.prisma" file and run `prisma generate` after saving it:
+
+generator client {
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "debian-openssl-3.0.x"]
+}
+
+The following locations have been searched:
+  /media/murad-wahid/SSD/my projects/personal/back-end/node_modules/.prisma/client
+  /media/murad-wahid/SSD/my projects/personal/back-end/node_modules/@prisma/client
+  D:\my projects\personal\back-end\node_modules\@prisma\client
+  /tmp/prisma-engines
+  /media/murad-wahid/SSD/my projects/personal/back-end/prisma
+Sat Nov 30 2024 20:31:51 } [PH] error: Prisma Client could not locate the Query Engine for runtime "debian-openssl-3.0.x".
+
+This happened because Prisma Client was generated for "windows", but the actual deployment required "debian-openssl-3.0.x".
+Add "debian-openssl-3.0.x" to `binaryTargets` in the "schema.prisma" file and run `prisma generate` after saving it:
+
+generator client {
+  provider      = "prisma-client-js"
+  binaryTargets = ["native", "debian-openssl-3.0.x"]
+}
+
+The following locations have been searched:
+  /media/murad-wahid/SSD/my projects/personal/back-end/node_modules/.prisma/client
+  /media/murad-wahid/SSD/my projects/personal/back-end/node_modules/@prisma/client
+  D:\my projects\personal\back-end\node_modules\@prisma\client
+  /tmp/prisma-engines
+  /media/murad-wahid/SSD/my projects/personal/back-end/prisma
